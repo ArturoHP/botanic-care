@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--A&E-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/GothamBlack"
+                android:id="@+id/saludo"
+                android:textSize="30dp"
+                android:fontFamily="@font/adamina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_marginTop="10dp"
+
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/White"
+            android:textSize="16dp"
+            android:fontFamily="@font/adamina"
+            android:background="@drawable/rounded_dialog4"
+            android:padding="11dp"
+            android:text="Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_dialog2"
+                android:fontFamily="@font/adamina"
+                android:padding="11dp"
+                android:text="Top 5 plants"
+                android:textColor="@color/White"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/White"
+                android:fontFamily="@font/averia_sans_libre"
+                android:layout_marginLeft="15dp"
+                android:layout_width="40dp"
+                android:layout_height="260dp"
+                android:background="@drawable/gradienttipoplanta"
+                android:padding="15dp"
+                android:text="House Plants" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/TiposPlantasSelec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/White"
+                android:fontFamily="@font/averia_sans_libre"
+                android:layout_marginLeft="15dp"
+                android:layout_width="38dp"
+                android:layout_height="260dp"
+                android:background="@drawable/gradienttipoplanta"
+                android:padding="15dp"
+                android:text="Office Plants" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/TiposPlantasOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/White"
+                android:fontFamily="@font/averia_sans_libre"
+                android:layout_marginLeft="15dp"
+                android:layout_width="40dp"
+                android:layout_height="260dp"
+                android:background="@drawable/gradienttipoplanta"
+                android:padding="15dp"
+                android:text="Backyard Plants" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/TiposPlantasBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
